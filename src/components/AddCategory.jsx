@@ -12,7 +12,7 @@ export const AddCategory = ({onNewCategory}) => {
     onNewCategory(inputValue.trim())
   }
   return (
-    <form className=' w-full flex justify-center' onSubmit={handleSubmit}>
+    <form className=' w-full flex justify-center ' onSubmit={handleSubmit}>
       <input
         className='p-3 w-2/4 rounded-full'
         type="text"
@@ -20,6 +20,7 @@ export const AddCategory = ({onNewCategory}) => {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
+      
     </form>
   )
 }
